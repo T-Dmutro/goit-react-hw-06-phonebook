@@ -18,17 +18,19 @@ function Form({ nameId, numberId }) {
   const handelChange = event => {
     const onName = event.currentTarget.name;
     const value = event.currentTarget.value;
+    if (onName==="name"){setName(value)}
+    if (onName==="number"){setNumber(value)}
 
-    switch (onName) {
-      case 'name':
-        setName(value);
-        break;
-      case 'number':
-        setNumber(value);
-        break;
-      default:
-        return;
-    }
+    // switch (onName) {
+    //   case 'name':
+    //     setName(value);
+    //     break;
+    //   case 'number':
+    //     setNumber(value);
+    //     break;
+    //   default:
+    //     return;
+    // }
   };
 
   const addNewContact = () => {

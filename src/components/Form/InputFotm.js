@@ -20,7 +20,7 @@ function Form({ nameId, numberId }) {
     const value = event.currentTarget.value;
     if (onName==="name"){setName(value)}
     if (onName==="number"){setNumber(value)}
-
+console.log(number)
     // switch (onName) {
     //   case 'name':
     //     setName(value);
